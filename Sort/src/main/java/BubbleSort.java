@@ -1,20 +1,25 @@
-import java.util.List;
+class BubbleSort implements Sort {
 
-public class BubbleSort {
 
-    public static void sort(int[] arr){
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
-                if(arr[j+1] < arr[j]){
-                    swap(arr , j+1 , j);
+    public void swap(int[] array, int a, int b) {
+        var tmp = array[a];
+        array[a] = array[b];
+        array[b] = tmp;
+    }
+
+    @Override
+    public void sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    swap(array , j,j+1);
                 }
             }
         }
     }
 
-    public static void swap(int[] arr , int a , int b){
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
+    @Override
+    public void sort(String[] array) {
+        System.out.println("This Method is Still working.");
     }
 }
