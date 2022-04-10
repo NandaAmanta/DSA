@@ -10,7 +10,6 @@ public class BubbleSortTest {
         sorter.sort(arr);
         System.out.println(Arrays.toString(arr));
 
-
     }
 
 }

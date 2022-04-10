@@ -5,4 +5,6 @@ public interface Sort {
 
     void sort(char[] array);
 
+    void sort(double [] array);
+
 }
