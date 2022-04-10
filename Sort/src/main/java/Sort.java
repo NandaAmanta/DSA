@@ -3,4 +3,6 @@ public interface Sort {
 
     void sort(String[] array);
 
+    void sort(char[] array);
+
 }
