@@ -26,24 +26,25 @@ public class QuickSort implements Sort {
         int leftPointer = lowIndex;
         int rightPointer = highIndex;
 
-        while (leftPointer < rightPointer) {
-
-            while (array[leftPointer] <= pivot && leftPointer < rightPointer) {
-                leftPointer++;
-            }
-
-            while (array[rightPointer] >= pivot && rightPointer > leftPointer) {
-                rightPointer--;
-            }
-
-            swap(array, leftPointer, rightPointer);
-        }
-
-        swap(array, leftPointer, highIndex);
-
+        leftPointer = partition(leftPointer, rightPointer, array, pivot, highIndex);
+        
         sort(array, lowIndex, leftPointer - 1);
         sort(array, leftPointer + 1, highIndex);
 
+    }
+
+    private int partition(int leftPointer, int rightPointer, int[] array, int pivot, int highIndex) {
+        while (leftPointer < rightPointer) {
+            while (array[leftPointer] <= pivot && leftPointer < rightPointer) {
+                leftPointer++;
+            }
+            while (array[rightPointer] >= pivot && rightPointer > leftPointer) {
+                rightPointer--;
+            }
+            swap(array, leftPointer, rightPointer);
+        }
+        swap(array, leftPointer, highIndex);
+        return leftPointer;
     }
 
     private void swap(int[] array, int indexA, int indexB) {
