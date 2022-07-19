@@ -1,14 +1,14 @@
+
 import java.util.Arrays;
 
 public class BubbleSortTest {
 
     public static void main(String[] args) {
         BubbleSort sorter = new BubbleSort();
-        int[] arr = {5, 1, 2, 3, 4};
-        System.out.println("Before : " + Arrays.toString(arr));
+        var array = Generator.array(100000);
 
-        sorter.sort(arr);
-        System.out.println("After : " + Arrays.toString(arr));
+        sorter.sort(array);
+        System.out.println("After : " + Arrays.toString(array));
 
     }
 

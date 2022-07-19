@@ -13,8 +13,48 @@ public class QuickSortTest {
 
     public static void main(String[] args) {
         QuickSort sorter = new QuickSort();
-        int[] array = new int[]{9, 4, 6, 2};
-        sorter.sort(array);
-        System.out.println(Arrays.toString(array));
+//        var array = Generator.array(500000);
+//        sorter.sort(array);
+//        System.out.println(Arrays.toString(array));
+
+        String[] arrayString = {
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu",
+            "Hallo", "Nanda", "Amanta", "IPutu"
+        };
+        sorter.sort(arrayString);
+        System.out.println(Arrays.toString(arrayString));
     }
 }
